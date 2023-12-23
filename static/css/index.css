@@ -133,5 +133,21 @@ body {
   font-size: smaller;
 }
 
+.aSide {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: 7%;
+}
+
+.model-viewer {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
 
 
