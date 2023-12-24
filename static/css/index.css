@@ -133,9 +133,19 @@ body {
   font-size: smaller;
 }
 
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
 .publication-video model-viewer {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
