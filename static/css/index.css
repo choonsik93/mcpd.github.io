@@ -157,3 +157,11 @@ body {
     width: 50%;
     height: 50%;
 }
+
+.publication-video .model-viewer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
