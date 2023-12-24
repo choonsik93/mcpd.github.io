@@ -143,7 +143,26 @@ body {
     border-radius: 10px !important;
 }
 
-.publication-video model-viewer {
+.meshA model-viewer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.meshB {
+    position: relative;
+    width: 16.6%;
+    height: 16.6%;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.meshA model-viewer {
     height: 100%;
     width: 100%;
     position: absolute;
