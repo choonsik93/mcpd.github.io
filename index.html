@@ -208,113 +208,38 @@
     <div class="column">
       <div class="content">
         <h2 class="title is-3">KinArt3D Dataset</h2>
-          <h3 class="title is-4">Specifcation</h3>
-            <p>
-            The KinArt3D dataset offers annotations for part segmentation at both the instance and motion levels, covering 92 distinct models across eight articulated object categories.
-            </p>
-            <div>
-              <div class="meshA" style="width: 50%; float:left">
-                <model-viewer src="static/meshes/fan.gltf" alt="fan" auto-rotate camera-controls ar ios-src="static/meshes/fan.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 50%; float:right">
-                <model-viewer src="static/meshes/leg.gltf" alt="leg" auto-rotate camera-controls ar ios-src="static/meshes/leg.gltf"></model-viewer>
-              </div>
-            </div>
-            <div style="width: 100%; height: 100px">
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/snake.gltf" alt="snake" auto-rotate camera-controls ar ios-src="static/meshes/snake.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/hinge.gltf" alt="hinge" auto-rotate camera-controls ar ios-src="static/meshes/hinge.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/lamp.gltf" alt="lamp" auto-rotate camera-controls ar ios-src="static/meshes/lamp.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/glasses.gltf" alt="glasses" auto-rotate camera-controls ar ios-src="static/meshes/glasses.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/door.gltf" alt="door" auto-rotate camera-controls ar ios-src="static/meshes/door.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/arm.gltf" alt="arm" auto-rotate camera-controls ar ios-src="static/meshes/arm.gltf"></model-viewer>
-              </div>
-            </div>
-          <h3 class="title is-4">Deformable shapes</h3>
-            <p>
-            Using the kinematic model of each object, it is possible to generate various poses for articulated objects.  
-            </p>
-            <div class="container is-max-desktop">
-              <div class="hero-body" style="width: 70%; height: 70%; margin: auto;">
-                <div id="results-carousel" class="carousel results-carousel">
-                  <div class="item">
-                    <video poster="" id="tree" autoplay controls muted loop height="100%">
-                      <source src="static/videos/door_moving_mp4.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="item">
-                    <video poster="" id="tree" autoplay controls muted loop height="100%">
-                      <source src="static/videos/leg_moving_mp4.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="item">
-                    <video poster="" id="tree" autoplay controls muted loop height="100%">
-                      <source src="static/videos/arm_moving_mp4.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </div>
-            </div>
-        <h3 class="title is-4">Point cloud sampling</h3>
-          <p>
-          Points are sampled on the surface of the articulated object's mesh to generate a point cloud from the mesh.
-          </p>
-          <div class="container is-max-desktop">
-            <div class="hero-body">
-              <div style="width: 100%; height: 25%">
-                <div style="width: 22%; float:left; margin: auto;">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/arm_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/arm_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-                <div style="width: 22%; float:left; margin: auto;">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/leg_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/leg_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-                <div style="width: 22%; float:left; margin: auto;">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/door_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/door_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-                <div style="width: 22%; float:left; margin: auto;">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/snake_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/snake_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-              </div>
-            </div>
+        <h3 class="title is-4">Specifcation</h3>
+        <p>
+        The KinArt3D dataset offers annotations for part segmentation at both the instance and motion levels, covering 92 distinct models across eight articulated object categories.
+        </p>
+        <div>
+          <div class="meshA" style="width: 50%; float:left">
+            <model-viewer src="static/meshes/fan.gltf" alt="fan" auto-rotate camera-controls ar ios-src="static/meshes/fan.gltf"></model-viewer>
           </div>
+          <div class="meshA" style="width: 50%; float:right">
+            <model-viewer src="static/meshes/leg.gltf" alt="leg" auto-rotate camera-controls ar ios-src="static/meshes/leg.gltf"></model-viewer>
+          </div>
+        </div>
+        <div style="width: 100%; height: 100px">
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/snake.gltf" alt="snake" auto-rotate camera-controls ar ios-src="static/meshes/snake.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/hinge.gltf" alt="hinge" auto-rotate camera-controls ar ios-src="static/meshes/hinge.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/lamp.gltf" alt="lamp" auto-rotate camera-controls ar ios-src="static/meshes/lamp.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/glasses.gltf" alt="glasses" auto-rotate camera-controls ar ios-src="static/meshes/glasses.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/door.gltf" alt="door" auto-rotate camera-controls ar ios-src="static/meshes/door.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/arm.gltf" alt="arm" auto-rotate camera-controls ar ios-src="static/meshes/arm.gltf"></model-viewer>
+          </div>
+        </div>
       </div>
     </div>
   </div>
