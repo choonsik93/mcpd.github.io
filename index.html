@@ -339,7 +339,9 @@
         <div class="content">
           <h2 class="title is-3">Unsupervised 3D Part Decomposition</h2>
           <p>
-          Using the kinematic model of each object, it is possible to generate various poses for articulated objects.  
+          Our model is designed with the following intuition: given different point sets of the same object, 
+          the target point sets can be aligned by dividing the source point set into several links and applying a rigid transformation to each link. 
+          The goal of our model is to find an optimal decomposition of the point set and transformations as a probability density estimation problem.
           </p>
           <div class="container is-max-desktop">
             <div class="hero-body">
