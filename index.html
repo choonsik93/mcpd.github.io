@@ -384,7 +384,24 @@
                 <p style="font-size: 20px"><b>Source point cloud</b></p>
               </div>
             </div>
-            <div style="width: 30%; height: 100%; float:left; margin: auto">
+            <div style="width: 30%; height: 100%; float:left; margin: auto" id="results-carousel" class="carousel results-carousel">
+              <div class="item">
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/videos/door_moving_mp4.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item">
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/videos/leg_moving_mp4.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item">
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/videos/arm_moving_mp4.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- div style="width: 30%; height: 100%; float:left; margin: auto">
               <div style="position: relative; top: 200px; text-align: center">
                 <img border="5" src="static/images/leg_target_point_cloud.png">
                 <p style="font-size: 20px"><b>Target point cloud</b></p>
@@ -403,7 +420,7 @@
                 </video>
                 <p style="font-size: 20px"><b>Reconstruction result</b></p>
               </div>
-            </div>
+            </div -->
           </div>
         </div>
       </div>
