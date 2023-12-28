@@ -48,8 +48,8 @@
   <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
   <script src="https://unpkg.com/two-up-element@1"></script>
 </head>
+  
 <body>
-
 
   <section class="hero">
     <div class="hero-body">
@@ -150,12 +150,11 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser video
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -165,7 +164,7 @@
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -208,436 +207,312 @@
     <div class="column">
       <div class="content">
         <h2 class="title is-3">KinArt3D Dataset</h2>
-          <h3 class="title is-4">Specifcation</h3>
-            <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-            </p>
-            <div>
-              <div class="meshA" style="width: 50%; float:left">
-                <model-viewer src="static/meshes/fan.gltf" alt="fan" auto-rotate camera-controls ar ios-src="static/meshes/fan.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 50%; float:right">
-                <model-viewer src="static/meshes/leg.gltf" alt="leg" auto-rotate camera-controls ar ios-src="static/meshes/leg.gltf"></model-viewer>
-              </div>
-            </div>
-            <div style="width: 100%; height: 17%">
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/snake.gltf" alt="snake" auto-rotate camera-controls ar ios-src="static/meshes/snake.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/hinge.gltf" alt="hinge" auto-rotate camera-controls ar ios-src="static/meshes/hinge.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/lamp.gltf" alt="lamp" auto-rotate camera-controls ar ios-src="static/meshes/lamp.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/glasses.gltf" alt="glasses" auto-rotate camera-controls ar ios-src="static/meshes/glasses.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/door.gltf" alt="door" auto-rotate camera-controls ar ios-src="static/meshes/door.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/arm.gltf" alt="arm" auto-rotate camera-controls ar ios-src="static/meshes/arm.gltf"></model-viewer>
-              </div>
-            </div>
-            <!-- div>
-              <div class="meshA" style="width: 50%; float:left">
-                <model-viewer src="static/meshes/fan.gltf" alt="fan" auto-rotate camera-controls ar ios-src="static/meshes/fan.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 50%; float:right">
-                <model-viewer src="static/meshes/leg.gltf" alt="leg" auto-rotate camera-controls ar ios-src="static/meshes/leg.gltf"></model-viewer>
-              </div>
-            </div>
-            <div style="width: 100%; height: 100px">
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/snake.gltf" alt="snake" auto-rotate camera-controls ar ios-src="static/meshes/snake.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/hinge.gltf" alt="hinge" auto-rotate camera-controls ar ios-src="static/meshes/hinge.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/lamp.gltf" alt="lamp" auto-rotate camera-controls ar ios-src="static/meshes/lamp.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/glasses.gltf" alt="glasses" auto-rotate camera-controls ar ios-src="static/meshes/glasses.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/door.gltf" alt="door" auto-rotate camera-controls ar ios-src="static/meshes/door.gltf"></model-viewer>
-              </div>
-              <div class="meshA" style="width: 16.6%; float:left">
-                <model-viewer src="static/meshes/arm.gltf" alt="arm" auto-rotate camera-controls ar ios-src="static/meshes/arm.gltf"></model-viewer>
-              </div>
-            </div -->
-          <h3 class="title is-4">Deformable shapes</h3>
-            <div class="container is-max-desktop">
-              <div class="hero-body">
-                <div id="results-carousel" class="carousel results-carousel">
-                  <div class="item">
-                    <video poster="" id="tree" autoplay controls muted loop height="100%">
-                      <source src="static/videos/door_moving_mp4.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="item">
-                    <video poster="" id="tree" autoplay controls muted loop height="100%">
-                      <source src="static/videos/leg_moving_mp4.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="item">
-                    <video poster="" id="tree" autoplay controls muted loop height="100%">
-                      <source src="static/videos/arm_moving_mp4.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                </div>
-              </div>
-            </div>
-        <h3 class="title is-4">Point cloud sampling</h3>
+        <h3 class="title is-4">Specifcation</h3>
+        <p>
+        The KinArt3D dataset offers annotations for part segmentation at both the instance and motion levels, covering 92 distinct models across eight articulated object categories.
+        </p>
+        <div>
+          <div class="meshA" style="width: 50%; float:left">
+            <model-viewer src="static/meshes/fan.gltf" alt="fan" auto-rotate camera-controls ar ios-src="static/meshes/fan.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 50%; float:right">
+            <model-viewer src="static/meshes/leg.gltf" alt="leg" auto-rotate camera-controls ar ios-src="static/meshes/leg.gltf"></model-viewer>
+          </div>
+        </div>
+        <div style="width: 100%; height: 100px">
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/snake.gltf" alt="snake" auto-rotate camera-controls ar ios-src="static/meshes/snake.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/hinge.gltf" alt="hinge" auto-rotate camera-controls ar ios-src="static/meshes/hinge.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/lamp.gltf" alt="lamp" auto-rotate camera-controls ar ios-src="static/meshes/lamp.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/glasses.gltf" alt="glasses" auto-rotate camera-controls ar ios-src="static/meshes/glasses.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/door.gltf" alt="door" auto-rotate camera-controls ar ios-src="static/meshes/door.gltf"></model-viewer>
+          </div>
+          <div class="meshA" style="width: 16.6%; float:left">
+            <model-viewer src="static/meshes/arm.gltf" alt="arm" auto-rotate camera-controls ar ios-src="static/meshes/arm.gltf"></model-viewer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container is-max-desktop">
+  <div class="columns is-centered">
+    <div class="column" style="width: 50%">
+      <div class="content">
+        <h3 class="title is-4">Deformable shapes</h3>
+          <p>
+          Using the kinematic model of each object, it is possible to generate various poses for articulated objects.  
+          </p>
           <div class="container is-max-desktop">
-            <div class="hero-body">
-              <div style="width: 100%; height: 25%">
-                <div style="width: 25%; float:left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/arm_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/arm_pc.png">
-                    </div>
-                  </two-up>
+            <div class="hero-body" style="width: 100%; height: 100%; margin: auto;">
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="item">
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/door_moving_mp4.mp4" type="video/mp4">
+                  </video>
                 </div>
-                <div style="width: 25%; float:left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/leg_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/leg_pc.png">
-                    </div>
-                  </two-up>
+                <div class="item">
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/leg_moving_mp4.mp4" type="video/mp4">
+                  </video>
                 </div>
-                <div style="width: 25%; float:left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/door_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/door_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-                <div style="width: 25%; float:left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/snake_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/snake_pc.png">
-                    </div>
-                  </two-up>
+                <div class="item">
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/arm_moving_mp4.mp4" type="video/mp4">
+                  </video>
                 </div>
               </div>
-              
-              <!-- div style="width: 100%; height: 20px">
-                <div class="meshA" style="width: 20%; float:left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/arm_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/arm_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-                <div class="meshA" style="width: 20%; float:;left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/leg_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/leg_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-                <div class="meshA" style="width: 20%; float:left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/door_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/door_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-                <div class="meshA" style="width: 20%; float:left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/snake_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/snake_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-              </div -->
-              <!-- div style="width: 100%; height: 20px">
-                <div class="meshA" style="width: 20%; float:left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/arm_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/arm_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-                <div class="meshA" style="width: 20%; float:;left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/leg_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/leg_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-                <div class="meshA" style="width: 20%; float:left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/door_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/door_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-                <div class="meshA" style="width: 20%; float:left">
-                  <two-up>
-                    <div class="first-wrapper">
-                      <img src="static/images/snake_mesh.png">
-                    </div>
-                    <div class="second-wrapper">
-                    <img src="static/images/snake_pc.png">
-                    </div>
-                  </two-up>
-                </div>
-              </div -->
             </div>
           </div>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+    
+    <div class="column" style="width: 50%">
+      <h3 class="title is-4">Point cloud sampling</h3>
+      <p>
+      Points are sampled on the surface of the articulated object's mesh to generate a point cloud from the mesh.
+      </p>
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <div style="width: 100%; height: 100%">
+            <div style="width: 45%; float:left; margin: auto;">
+              <two-up>
+                <div class="first-wrapper">
+                  <img src="static/images/arm_mesh.png">
+                </div>
+                <div class="second-wrapper">
+                <img src="static/images/arm_pc.png">
+                </div>
+              </two-up>
+            </div>
+            <div style="width: 45%; float:left; margin: auto;">
+              <two-up>
+                <div class="first-wrapper">
+                  <img src="static/images/leg_mesh.png">
+                </div>
+                <div class="second-wrapper">
+                <img src="static/images/leg_pc.png">
+                </div>
+              </two-up>
+            </div>
+            <div style="width: 45%; float:left; margin: auto;">
+              <two-up>
+                <div class="first-wrapper">
+                  <img src="static/images/door_mesh.png">
+                </div>
+                <div class="second-wrapper">
+                <img src="static/images/door_pc.png">
+                </div>
+              </two-up>
+            </div>
+            <div style="width: 45%; float:left; margin: auto;">
+              <two-up>
+                <div class="first-wrapper">
+                  <img src="static/images/snake_mesh.png">
+                </div>
+                <div class="second-wrapper">
+                <img src="static/images/snake_pc.png">
+                </div>
+              </two-up>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
 </div>
-</div>
-</section>
-<!-- End image carousel -->
 
-        
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <h2 class="title is-3">KinArt3D dataset</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Unsupervised 3D Part Decomposition</h2>
+          <p>
+          The proposed method enables the unsupervised decomposition of the source point cloud of an articulated object into multiple parts.
+          </p>
+          <h3 class="title is-4">Optimization using a single target point cloud</h3>
+          <p>
+          Given a single target point cloud, the proposed method involves decomposing the source point cloud and reconstructing the target point cloud from it.
+          </p>
+          <div>
+            <div style="width: 30%; height: 100%; float:left; margin: auto">
+              <div style="position: relative; top: 200px; text-align: center">
+                <img border="5" src="static/images/leg_source_point_cloud.png">
+                <p style="font-size: 20px"><b>Source point cloud</b></p>
+              </div>
+            </div>
+            <div style="width: 30%; height: 100%; float:left; margin: auto">
+              <div style="position: relative; top: 200px; text-align: center">
+                <img border="5" src="static/images/leg_target_point_cloud.png">
+                <p style="font-size: 20px"><b>Target point cloud</b></p>
+              </div>
+            </div>
+            <div style="width: 40%; height: 80%; float:left; margin: auto">
+              <div style="width: 100%; height: 50%; text-align: center">
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/videos/leg_segmentation_mp4.mp4" type="video/mp4">
+                </video>
+                <p style="font-size: 20px"><b>Decomposition result</b></p>
+              </div>
+              <div style="width: 100%; height: 50%; text-align: center">
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/videos/leg_reconstruction_mp4.mp4" type="video/mp4">
+                </video>
+                <p style="font-size: 20px"><b>Reconstruction result</b></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">KinArt3D Dataset</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="content has-text-justified">
-            <p>
-              In this letter, we address the 3D link segmentation problem of articulated objects using multiple point sets with different configurations.
-            </p>
-            <p>
-              We are motivated by the fact that a point set
-              of an object can be aligned to point sets with different configurations
-              by applying rigid transformations to links. Since existing 3D part
-              segmentation datasets do not provide motion-based annotations,
-              we propose a novel dataset of articulated objects, which are annotated based on its kinematic models. 
-              We define the point set
-              alignment process as a probability density estimation problem and
-              find the optimal decomposition of the point set and deformations
-              using the EM algorithm. In addition, to improve the segmentation
-              performance, we propose a regularization loss designed with a
-              physical prior of decomposition. We evaluate the proposed method
-              on our dataset, demonstrating that the proposed method achieves
-              the state-of-the-art performance compared to baseline methods.
-            </p>
-            <p>
-              Finally, we also propose an effective target manipulating point
-              proposer, which can be applied to collect multiple point sets from
-              an unknown object with different configurations to better solve the
-              3D link segmentation problem.
-            </p>
-          </div>
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-4">Optimization using multiple target point clouds</h3>
+          <p>
+          Similarly, when multiple target point clouds are provided, it is also possible to decompose the source point cloud to simultaneously reconstruct all target point clouds.
+          </p>
+          <div>
+            <div style="width: 30%; height: 100%; float:left;">
+              <div style="width: 100%; height: 50% position: relative; top: 1px; text-align: center">
+                <img border="5" src="static/images/arm_source_point_cloud.png">
+                <p style="font-size: 20px"><b>Source point cloud</b></p>
+              </div>
+              <div style="width: 100%; height: 50% position: relative; top: 1px; text-align: center">
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/videos/arm_segmentation_mp4.mp4" type="video/mp4">
+                </video>
+                <p style="font-size: 20px"><b>Decompostion result</b></p>
+              </div>
+            </div>
+            <div style="width: 35%; height: 100%; float:left;">
+              <div style="width: 100%; height: 50%">
+                <div style="width: 50%; height: 100%; float:left">
+                  <img border="5" src="static/images/arm_target_point_cloud_0.png">
+                </div>
+                <div style="width: 50%; height: 100%; float:left">
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/arm_reconstruction_0_mp4.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div style="width: 100%; height: 50%">
+                <div style="width: 50%; height: 100%; float:left">
+                  <img border="5" src="static/images/arm_target_point_cloud_1.png">
+                </div>
+                <div style="width: 50%; height: 100%; float:left">
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/arm_reconstruction_1_mp4.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div style="width: 35%; height: 100%; float:left;">
+              <div style="width: 100%; height: 50%">
+                <div style="width: 50%; height: 100%; float:left">
+                  <img border="5" src="static/images/arm_target_point_cloud_2.png">
+                </div>
+                <div style="width: 50%; height: 100%; float:left">
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/arm_reconstruction_2_mp4.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div style="width: 100%; height: 50%">
+                <div style="width: 50%; height: 100%; float:left">
+                  <img border="5" src="static/images/arm_target_point_cloud_3.png">
+                </div>
+                <div style="width: 50%; height: 100%; float:left">
+                  <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <source src="static/videos/arm_reconstruction_3_mp4.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
+<section class="section">
+<div class="container is-max-desktop">
+  <div class="columns is-centered">
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-3">Target Point Proposer</h2>
+        <p>
+        Similarly, when multiple target point clouds are provided, it is also possible to decompose the source point cloud to simultaneously reconstruct all target point clouds.
+        </p>
+        <div style="width: 50%; height: 100%; float:left">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="static/videos/leg_reconstruction_mp4.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
       </div>
     </div>
   </div>
+</div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
+  
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @article{choy2022unsupervised,
+        title={Unsupervised 3D Link Segmentation of Articulated Objects With a Mixture of Coherent Point Drift},
+        author={Choy, Jaegoo and Cha, Geonho and Oh, Songhwai},
+        journal={IEEE Robotics and Automation Letters},
+        volume={7},
+        number={3},
+        pages={7124--7131},
+        year={2022},
+        publisher={IEEE}
+      }
+    </code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
+<footer class="footer">
+<div class="container">
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This website is licensed under a <a rel="license"
+                                              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+          Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
+        <p>
+          This means you are free to borrow the <a
+            href="https://github.com/choonsik93/mcpd">source code</a> of this website,
+          we just ask that you link back to this page in the footer.
+          Please remember to remove the analytics code included in the header of the website which
+          you do not want on your website.
+        </p>
       </div>
     </div>
   </div>
+</div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
